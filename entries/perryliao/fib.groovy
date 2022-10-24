@@ -22,7 +22,7 @@ pipeline {
                 }
             }
         }
-        stage('Get Fibbonacci') {
+        stage('Get Fibonacci') {
             steps {
                 script {
                     nComputed = sh(returnStdout: true, script: "wc -l < fibCache").trim().toInteger()
